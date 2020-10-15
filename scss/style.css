@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppin', sans-serif;
+  height: 100vh;
+  padding: 0 15px;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 40px;
+  color: #a3a5ae;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+b {
+  font-weight: 700;
+}
+
+.header {
+  font-size: 0.79em;
+}
+
+.header-title {
+  text-align: center;
+  color: #4c4e61;
+  font-weight: 200;
+}
+
+.header-description {
+  font-size: 1.25em;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 200;
+  color: #a3a5ae;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 16px -6px black;
+          box-shadow: 0px 2px 16px -6px black;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-bottom: 20px;
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-body-title {
+  color: #4c4e61;
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+
+.card-body-description {
+  color: #a3a5ae;
+  font-size: 1em;
+  line-height: 25px;
+  margin-top: auto;
+  width: 250px;
+}
+
+.card-body-image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 60px;
+  width: 60px;
+}
+
+.card-supervisor {
+  border-top: 5px solid #45d3d3;
+}
+
+.card-builder {
+  border-top: 5px solid #ea5353;
+}
+
+.card-karma {
+  border-top: 5px solid #fcaf4a;
+}
+
+.card-calculator {
+  border-top: 5px solid #549ef2;
+}
+
+.card footer {
+  height: 10px;
+}
+
+@media screen and (min-width: 501px) {
+  body {
+    height: auto;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    height: 50vh;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: '. card1 .' 'card2 card1 card3' 'card2 card4 card3' '. card4 .';
+  }
+  .card {
+    height: 90%;
+  }
+  .card-supervisor {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: card2;
+  }
+  .card-builder {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: card1;
+  }
+  .card-calculator {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: card3;
+  }
+  .card-karma {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: card4;
+  }
+  .card {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .card-body-title {
+    font-size: 1em;
+  }
+  .card-body-description {
+    color: #a3a5ae;
+    font-size: .9em;
+    line-height: 20px;
+  }
+  .card-body-image {
+    height: 40px;
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
